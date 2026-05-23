@@ -10,7 +10,7 @@ El simulador se encuentra desplegado en la nube utilizando Streamlit Community C
 🔗 **[Abrir Simulador Electromagnético](https://simulador-electromagnetico-proyectofisica.streamlit.app/)**
 
 ## Descripción breve del simulador
-Aplicación web interactiva desarrollada para simular sistemas de cargas eléctricas puntuales en una (1D) y dos (2D) dimensiones. El simulador permite a los usuarios definir múltiples cargas (indicando su magnitud y posición) y calcula de manera automatizada la fuerza eléctrica entre pares de cargas, la fuerza neta resultante sobre una carga específica mediante el principio de superposición, y el campo eléctrico en coordenadas puntuales o en todo el espacio evaluado a través de un mapa vectorial interactivo.
+Aplicación web interactiva desarrollada para simular sistemas de cargas eléctricas puntuales en una (1D) y dos (2D) dimensiones. El simulador permite a los usuarios definir múltiples cargas (indicando su magnitud y posición) y calcula de manera automatizada la fuerza eléctrica entre pares de cargas, la fuerza neta resultante sobre una carga específica mediante el principio de superposición, y el campo eléctrico en coordenadas puntuales o en todo el espacio evaluado a través de un mapa vectorial interactivo. 
 
 ## Lenguaje y librerías utilizadas
 El núcleo lógico e interactivo del simulador está construido íntegramente en **Python 3**. Se implementaron las siguientes librerías para cubrir los requerimientos matemáticos y de interfaz:
@@ -32,9 +32,9 @@ Si desea ejecutar el código fuente en su propia máquina en lugar de usar la ve
 
 ## Ejemplos de uso y Casos de Prueba
 Para verificar el correcto funcionamiento del modelo físico, el sistema puede evaluarse mediante los siguientes tres casos de prueba:
-- **Caso 1D:** Seleccionar el espacio "1D" en el panel. Ingresar dos cargas colineales (por ejemplo, $1\times10^{-6}C$ en la posición $x=-2$, y $-1\times10^{-6}C$ en $x=2$). Al analizar la primera carga, se visualizará un vector de fuerza de atracción puramente horizontal.
+- **Caso 1D:** Seleccionar el espacio "1D" en el panel. Ingresar dos cargas colineales (por ejemplo, $1\times 10^{-6}C$ en la posición $x=-2$, y $-1\times 10^{-6}C$ en $x=2$). Al analizar la primera carga, se visualizará un vector de fuerza de atracción puramente horizontal.
 - **Caso 2D:** Seleccionar el espacio "2D". Definir tres cargas formando un triángulo en el plano (por ejemplo: $q_{1}$ en el origen, $q_{2}$ sobre el eje X y $q_{3}$ en el eje Y). El programa descompondrá matemáticamente las fuerzas individuales que actúan sobre la carga objetivo para mostrar el vector de fuerza neta resultante y sus proyecciones.
-- **Caso de Campo Eléctrico:** Mientras se evalúa un sistema de cargas, dirigirse a la sección "Puntos de Campo Eléctrico" y definir 3 coordenadas distintas en el espacio vacío ( por ejemplo, $(1,1)$, $(-2,3)$, $(4,0)$ ). El sistema calculará la magnitud exacta en esas coordenadas e ilustrará un vector magenta que indicará la dirección y sentido de la línea de campo.
+- **Caso de Campo Eléctrico:** Mientras se evalúa un sistema de cargas, dirigirse a la sección "Puntos de Campo Eléctrico" y definir 3 coordenadas distintas en el espacio vacío (por ejemplo, $(1,1)$, $(-2,3)$, $(4,0)$). El sistema calculará la magnitud exacta en esas coordenadas e ilustrará un vector magenta que indicará la dirección y sentido de la línea de campo.
 
 ## Explicación breve de los cálculos implementados
 El motor de cálculo del programa se cimienta en los siguientes principios:
@@ -47,7 +47,7 @@ Para garantizar la integridad matemática de la simulación, el programa cuenta 
 - Bloqueo de entradas no numéricas en los campos de magnitud y posición.
 - Prevención de superposición de cargas, arrojando una alerta visual y deteniendo la ejecución si el usuario intenta colocar dos partículas en la misma coordenada exacta.
 - Prevención de división entre cero ($r=0$) al evitar calcular la fuerza de una carga sobre sí misma o al calcular el campo eléctrico exactamente en el centro de una partícula emisora.
-- Filtrado de errores de precisión de punto flotante para resultados virtualmente nulos (magnitudes menores a $1\times10^{-12}$).
+- Filtrado de errores de precisión de punto flotante para resultados virtualmente nulos (magnitudes menores a $1\times 10^{-12}$).
 
 ## Visualizaciones
 El entorno gráfico del simulador emplea la siguiente convención visual interactiva, controlable desde el menú lateral de "Visualización":
