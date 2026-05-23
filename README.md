@@ -5,7 +5,7 @@
 - Islas Granillo Jose Ernesto
 - Montiel Espinosa Hugo Santiago
 
-## 🌐 Acceso al Simulador en Línea
+## Acceso al Simulador en Línea
 El simulador se encuentra desplegado en la nube utilizando Streamlit Community Cloud. Puede acceder a la versión completamente funcional sin necesidad de instalación a través del siguiente enlace:
 🔗 **[Abrir Simulador Electromagnético](https://simulador-electromagnetico-proyectofisica.streamlit.app/)**
 
@@ -34,7 +34,7 @@ Si desea ejecutar el código fuente en su propia máquina en lugar de usar la ve
 Para verificar el correcto funcionamiento del modelo físico, el sistema puede evaluarse mediante los siguientes tres casos de prueba:
 - **Caso 1D:** Seleccionar el espacio "1D" en el panel. Ingresar dos cargas colineales (por ejemplo, $1\times10^{-6}C$ en la posición $x=-2$, y $-1\times10^{-6}C$ en $x=2$). Al analizar la primera carga, se visualizará un vector de fuerza de atracción puramente horizontal.
 - **Caso 2D:** Seleccionar el espacio "2D". Definir tres cargas formando un triángulo en el plano (por ejemplo: $q_{1}$ en el origen, $q_{2}$ sobre el eje X y $q_{3}$ en el eje Y). El programa descompondrá matemáticamente las fuerzas individuales que actúan sobre la carga objetivo para mostrar el vector de fuerza neta resultante y sus proyecciones.
-- **Caso de Campo Eléctrico:** Mientras se evalúa un sistema de cargas, dirigirse a la sección "Puntos de Campo Eléctrico" y definir 3 coordenadas distintas en el espacio vacío (por ejemplo, $(1,1)$, $(-2,3)$, $(4,0)$). El sistema calculará la magnitud exacta en esas coordenadas e ilustrará un vector magenta que indicará la dirección y sentido de la línea de campo.
+- **Caso de Campo Eléctrico:** Mientras se evalúa un sistema de cargas, dirigirse a la sección "Puntos de Campo Eléctrico" y definir 3 coordenadas distintas en el espacio vacío ( por ejemplo, $(1,1)$, $(-2,3)$, $(4,0)$ ). El sistema calculará la magnitud exacta en esas coordenadas e ilustrará un vector magenta que indicará la dirección y sentido de la línea de campo.
 
 ## Explicación breve de los cálculos implementados
 El motor de cálculo del programa se cimienta en los siguientes principios:
