@@ -39,8 +39,8 @@ Para verificar el correcto funcionamiento del modelo físico, el sistema puede e
 ## Explicación breve de los cálculos implementados
 El motor de cálculo del programa se cimienta en los siguientes principios:
 - **Ley de Coulomb:** La magnitud de la interacción electrostática entre cada par de cargas se determina utilizando la fórmula $F = k \frac{|q_{1}q_{2}|}{r^{2}}$, utilizando la constante $k = 8.99\times 10^{9} N\cdot m^{2}/C^{2}$.
-- **Principio de Superposición y Fuerza Neta:** Para hallar la fuerza total sobre una partícula objetivo, se suman vectorialmente las contribuciones de todas las demás cargas: $\vec{F}_{neta} = \sum_{i} \vec{F}_{i}$. Para lograrlo programáticamente, la fuerza individual se divide en componentes ortogonales ($F_{x} = F \cos(\theta)$ y $F_{y} = F \sin(\theta)$).
-- **Campo Eléctrico:** La contribución al campo eléctrico provista por cada carga en un punto específico se obtiene con $E = k \frac{|q|}{r^{2}}$. El campo vectorial total sobre la coordenada dada es $\vec{E}_{total} = \sum_{i} \vec{E}_{i}$.
+- **Principio de Superposición y Fuerza Neta:** Para hallar la fuerza total sobre una partícula objetivo, se suman vectorialmente las contribuciones de todas las demás cargas: $\vec{F}_{neta}=\sum\vec{F}_i$. Para lograrlo programáticamente, la fuerza individual se divide en componentes ortogonales ( $F_x=F\cos(\theta)$ y $F_y=F\sin(\theta)$ ).
+- **Campo Eléctrico:** La contribución al campo eléctrico provista por cada carga en un punto específico se obtiene con $E=k\frac{|q|}{r^2}$. El campo vectorial total sobre la coordenada dada es $\vec{E}_{total}=\sum\vec{E}_i$.
 
 ## Validaciones del Sistema
 Para garantizar la integridad matemática de la simulación, el programa cuenta con validaciones internas:
