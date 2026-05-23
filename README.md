@@ -38,9 +38,9 @@ Para verificar el correcto funcionamiento del modelo físico, el sistema puede e
 
 ## Explicación breve de los cálculos implementados
 El motor de cálculo del programa se cimienta en los siguientes principios:
-- **Ley de Coulomb:** La magnitud de la interacción electrostática entre cada par de cargas se determina utilizando la fórmula $F=k\frac{|q_{1}q_{2}|}{r^{2}}$, utilizando la constante $k=8.99\times10^{9}N\cdot m^{2}/C^{2}$.
-- **Principio de Superposición y Fuerza Neta:** Para hallar la fuerza total sobre una partícula objetivo, se suman vectorialmente las contribuciones de todas las demás cargas: $\vec{F}_{neta}=\sum_{i}\vec{F}_{i}$. Para lograrlo programáticamente, la fuerza individual se divide en componentes ortogonales ( $F_{x}=F\cos(\theta)$ y $F_{y}=F\sin(\theta)$ ).
-- **Campo Eléctrico:** La contribución al campo eléctrico provista por cada carga en un punto específico se obtiene con $E=k\frac{|q|}{r^{2}}$. El campo vectorial total sobre la coordenada dada es $\vec{E}_{total}=\sum_{i}\vec{E}_{i}$.
+- **Ley de Coulomb:** La magnitud de la interacción electrostática entre cada par de cargas se determina utilizando la fórmula $F=k\frac{|q_1q_2|}{r^2}$, utilizando la constante $k=8.99\times10^9N\cdot m^2/C^2$.
+- **Principio de Superposición y Fuerza Neta:** Para hallar la fuerza total sobre una partícula objetivo, se suman vectorialmente las contribuciones de todas las demás cargas: $\vec{F}_{neta}=\sum\vec{F}_i$. Para lograrlo programáticamente, la fuerza individual se divide en componentes ortogonales ($F_x=F\cos(\theta)$ y $F_y=F\sin(\theta)$).
+- **Campo Eléctrico:** La contribución al campo eléctrico provista por cada carga en un punto específico se obtiene con $E=k\frac{|q|}{r^2}$. El campo vectorial total sobre la coordenada dada es $\vec{E}_{total}=\sum\vec{E}_i$.
 
 ## Validaciones del Sistema
 Para garantizar la integridad matemática de la simulación, el programa cuenta con validaciones internas:
@@ -53,6 +53,6 @@ Para garantizar la integridad matemática de la simulación, el programa cuenta 
 El entorno gráfico del simulador emplea la siguiente convención visual interactiva, controlable desde el menú lateral de "Visualización":
 - **Cargas Eléctricas:** Esferas color rojo para denotar cargas positivas (+) y color azul para cargas negativas (-). Las cargas de valor $0C$ se representan en gris.
 - **Fuerza Neta:** Representada por un vector verde oscuro anclado a la carga analizada.
-- **Componentes de Fuerza (Interactivo):** Líneas discontinuas en naranja ( $F_{x}$ ) y morado ( $F_{y}$ ) que demuestran la descomposición rectangular.
+- **Componentes de Fuerza (Interactivo):** Líneas discontinuas en naranja ($F_{x}$) y morado ($F_{y}$) que demuestran la descomposición rectangular.
 - **Vectores de Campo Eléctrico:** Representados por cruces ('x') negras de las cuales surge un vector magenta. Sus proyecciones se pueden visualizar de manera opcional con líneas punteadas (celeste para $E_{x}$ y rosa para $E_{y}$).
 - **Mapa Vectorial General (Interactivo):** Fondo cuadriculado compuesto por flechas grises semitransparentes que demuestran la dirección del campo electromagnético en todo el plano cartesiano.
